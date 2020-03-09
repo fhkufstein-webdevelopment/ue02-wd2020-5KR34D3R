@@ -42,15 +42,74 @@ body {
     margin-right:15px;
 }
 
+/* ---------------------------------------------------------*/
+/* Hausübung */
+
+/*
+  Frage:
+    - warum wurde header und footer verwendet aber nicht main article?
+*/
+.inner{
+  display: table;
+  margin: auto;
+  max-width: 990px;
+}
+
+.inner{
+  width: 990px;
+}
+
+.mainNavi{
+  font-size: 18px;
+}
+
+.mainNavi li{
+  list-style: none;
+}
+
+.mainNavi a{
+  display: block;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.level_1{
+  padding: 0;
+}
+.level_1 > li{
+  display: inline-block;
+
+  padding-right: 15px;
+}
+
+.level_2{
+  display: none;
+  margin: 0;
+  padding:0;
+  position: absolute;
+  width: 220px;
+}
+
+.level_2 li:hover{
+  background-color: #337ab7;
+}
+
+.level_2 a{
+  color: #337ab7;
+  padding: 10px 15px 10px 10px;
+}
+
+.level_2 a:hover{
+  color: white;
+}
+
+.level_1 > li:hover > .level_2{
+  display: block;
+  background-color: white;
+}
+
 footer {
     background-color:#f8f9fa;
     height: 150px;
     padding-top:20px;
 }
-
-
-
-
-
-
-
